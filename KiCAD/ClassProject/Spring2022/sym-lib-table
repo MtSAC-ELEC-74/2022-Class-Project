@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Eduardo)(type Legacy)(uri ${KIPRJMOD}/Eduardo.lib)(options "")(descr ""))
+  (lib (name Spring2022-rescue)(type Legacy)(uri ${KIPRJMOD}/Spring2022-rescue.lib)(options "")(descr ""))
 )
