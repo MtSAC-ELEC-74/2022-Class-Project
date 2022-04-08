@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MOSFET_T0-92
+D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.onsemi.com/pub_link/Collateral/BS107-D.PDF
+$ENDCMP
+#
+#End Doc Library

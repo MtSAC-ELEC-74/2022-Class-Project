@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name 74SAM)(type Legacy)(uri ${KIPRJMOD}/Libraries/74SAM.lib)(options "")(descr ""))
+)
