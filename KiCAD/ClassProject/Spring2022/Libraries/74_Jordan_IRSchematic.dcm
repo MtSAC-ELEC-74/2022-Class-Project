@@ -1,33 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP CQY99
-D 950nm IR-LED, 5mm
-K IR LED
-F https://www.prtice.info/IMG/pdf/CQY99.pdf
-$ENDCMP
-#
 $CMP IRLED1503
 D 940nm IR-LED, 5mm
 K IR LED
 F http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf
-$ENDCMP
-#
-$CMP LD274
-D 950nm IR-LED, 5mm
-K IR LED
-F http://pdf.datasheetcatalog.com/datasheet/siemens/LD274.pdf
-$ENDCMP
-#
-$CMP SFH4546
-D High-Power IR LED 940nm
-K IR LED
-F http://www.osram-os.com/Graphics/XPic1/00101982_0.pdf
-$ENDCMP
-#
-$CMP SFH4550
-D 950nm High-Power IR-LED, 5mm
-K IR LED
-F http://www.osram-os.com/Graphics/XPic3/00116140_0.pdf
 $ENDCMP
 #
 #End Doc Library
