@@ -1,18 +1,4 @@
-19409578879263689
-74_Jose
-LED_D5.0mm-4_RGB
-LED, diameter 5.0mm, 2 pins, diameter 5.0mm, 3 pins, diameter 5.0mm, 4 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-154A4SUREQBFZGEW(Ver.9A).pdf
-LED diameter 5.0mm 2 pins diameter 5.0mm 3 pins diameter 5.0mm 4 pins RGB RGBLED
-0
-4
-4
-74_jacob
-R-0.25W-THRU
-
-
-0
-2
-2
+19407929435435549
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50728,6 +50714,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+ESP32-C3-MINI-1-N4
+ESP32C3MINI1N4
+ESP32-C3-MINI-1-N4
+Integrated Circuit
+0
+61
+61
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters

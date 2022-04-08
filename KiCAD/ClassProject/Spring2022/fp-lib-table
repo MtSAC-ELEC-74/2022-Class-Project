@@ -3,4 +3,5 @@
   (lib (name 74_jacob)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_jacob.pretty)(options "")(descr ""))
   (lib (name eduardo_aaron)(type KiCad)(uri ${KIPRJMOD}/Libraries/eduardo_aaron.pretty)(options "")(descr ""))
   (lib (name 74_Jose)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_Jose.pretty)(options "")(descr ""))
+  (lib (name KiCad)(type KiCad)(uri E:/ELEC74/ESP32-C3-MINI-1-N4/KiCad.pretty)(options "")(descr ""))
 )
