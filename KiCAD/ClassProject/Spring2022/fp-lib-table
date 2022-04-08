@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Accel_LIS2DE12TR")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LIS2DE12TR/footprints.pretty")(options "")(descr "Accelerometer"))
+)
