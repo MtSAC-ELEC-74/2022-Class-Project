@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name "Patrick B")(type KiCad)(uri "${KIPRJMOD}/Libraries/Patrick B.pretty")(options "")(descr ""))
   (lib (name 74_jacob)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_jacob.pretty)(options "")(descr ""))
+  (lib (name eduardo_aaron)(type KiCad)(uri ${KIPRJMOD}/Libraries/eduardo_aaron.pretty)(options "")(descr ""))
 )

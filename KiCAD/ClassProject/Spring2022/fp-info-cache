@@ -1,6 +1,6 @@
-19407929432465958
-74_ClassProj_IRFootprint
-IR1503
+19409578874178774
+74_jacob
+R-0.25W-THRU
 
 
 0
@@ -76299,13 +76299,13 @@ rotary encoder
 0
 5
 4
-SAM
-TO-92_Inline
-TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)
-to-92 sc-43 sc-43a sot54 PA33 transistor
+SHTC1
+SON100P200X200X7500-5N
+SHTC1
+Integrated Circuit
 0
-3
-3
+5
+5
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
