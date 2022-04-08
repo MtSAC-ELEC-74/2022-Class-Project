@@ -5,4 +5,5 @@
   (lib (name Mehdi_Library)(type Legacy)(uri ${KIPRJMOD}/Libraries/Mehdi_Library.lib)(options "")(descr ""))
   (lib (name "74 IVAN RGB")(type Legacy)(uri "${KIPRJMOD}/Libraries/74 IVAN RGB.lib")(options "")(descr ""))
   (lib (name 74_Jordan_IRSchematic)(type Legacy)(uri ${KIPRJMOD}/Libraries/74_Jordan_IRSchematic.lib)(options "")(descr ""))
+  (lib (name "LIS2DE12TR")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LIS2DE12TR/LIS2DE12TR.kicad_sym")(options "")(descr ""))
 )
