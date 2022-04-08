@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74
+D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.onsemi.com/pub_link/Collateral/BS107-D.PDF
+$ENDCMP
+#
+$CMP BS108
+D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.redrok.com/MOSFET_BS108_200V_250mA_8O_Vth1.5_TO-92.PDF
+$ENDCMP
+#
+$CMP BS170
+D 0.5A Id, 60V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F https://www.onsemi.com/pub/Collateral/BS170-D.PDF
+$ENDCMP
+#
+$CMP MOSFET_T0-92
+D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.onsemi.com/pub_link/Collateral/BS107-D.PDF
+$ENDCMP
+#
+#End Doc Library
