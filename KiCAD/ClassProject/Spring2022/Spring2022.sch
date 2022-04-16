@@ -33,7 +33,7 @@ F 11 "" H 2800 850 50  0001 L CNN "Arrow Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74_jacob:R R1
+L Spring2022-rescue:R-74_jacob R1
 U 1 1 62509AAA
 P 5300 2450
 F 0 "R1" H 5370 2496 50  0000 L CNN
