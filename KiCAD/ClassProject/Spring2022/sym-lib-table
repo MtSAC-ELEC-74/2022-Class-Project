@@ -8,4 +8,5 @@
   (lib (name 74_Eduardo)(type Legacy)(uri ${KIPRJMOD}/Libraries/74_Eduardo.lib)(options "")(descr ""))
   (lib (name 74_Jacob)(type Legacy)(uri ${KIPRJMOD}/Libraries/74_jacob.lib)(options "")(descr ""))
   (lib (name 74_SAM)(type Legacy)(uri ${KIPRJMOD}/Libraries/74_SAM.lib)(options "")(descr ""))
+  (lib (name 74_Kevin)(type Legacy)(uri ${KIPRJMOD}/Libraries/74_Kevin/74_Kevin.lib)(options "")(descr ""))
 )
