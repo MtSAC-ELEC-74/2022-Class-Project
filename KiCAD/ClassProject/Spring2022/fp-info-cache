@@ -1,109 +1,4 @@
-19539324836807176
-1_pontech
-APBA3010ESGC-GX
-
-
-0
-3
-3
-1_pontech
-USB_C_Receptacle_Molex_2171830001
-USB TYPE C, RA RCPT PCB, Hybrid, https://www.amphenolcanada.com/StockAvailabilityPrice.aspx?From=&PartNum=12401548E4%7e2A
-USB C Type-C Receptacle Hybrid
-0
-28
-25
-1_pontech
-pontech-logo-12mm_x_15mm
-
-
-0
-0
-0
-1_pontech
-pontech-logo-16mm_x_20mm
-
-
-0
-0
-0
-1_pontech
-pontech-logo-50mm_x_60mm
-
-
-0
-0
-0
-74_Accel_LIS2DE12TR
-LIS2DE12TR
-
-
-0
-12
-12
-74_ClassProj_IRFootprint
-IR1503
-
-
-0
-2
-2
-74_Jose
-LED_D5.0mm-4_RGB
-LED, diameter 5.0mm, 2 pins, diameter 5.0mm, 3 pins, diameter 5.0mm, 4 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-154A4SUREQBFZGEW(Ver.9A).pdf
-LED diameter 5.0mm 2 pins diameter 5.0mm 3 pins diameter 5.0mm 4 pins RGB RGBLED
-0
-4
-4
-74_Kevin
-Bluetooth_IC_IS1871SF-202-TRAY
-
-
-0
-48
-33
-74_Patrick B
-ESP32C3MINI1N4
-ESP32-C3-MINI-1-N4
-Integrated Circuit
-0
-61
-61
-74_Patrick B
-ICM7555-PDIP
-
-
-0
-8
-7
-74_SAM
-TO-92_Inline
-TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)
-to-92 sc-43 sc-43a sot54 PA33 transistor
-0
-3
-3
-74_eduardo_aaron
-SHTC1Humidity_temp_footprint
-SHTC1
-Integrated Circuit
-0
-5
-5
-74_jacob
-R-0.25W-THRU
-
-
-0
-2
-2
-74_mehdi
-TO-92L_Inline
-TO-92L leads in-line (large body variant of TO-92), also known as TO-226, wide, drill 0.75mm (see https://www.diodes.com/assets/Package-Files/TO92L.pdf and http://www.ti.com/lit/an/snoa059/snoa059.pdf)
-TO-92L Inline Wide transistor
-0
-3
-3
+20174377357836781
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72673,6 +72568,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Patrick B
+ESP32C3MINI1N4
+ESP32-C3-MINI-1-N4
+Integrated Circuit
+0
+61
+61
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
