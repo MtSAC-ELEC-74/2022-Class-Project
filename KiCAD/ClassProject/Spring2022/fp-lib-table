@@ -5,4 +5,8 @@
   (lib (name 74_Jose)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_Jose.pretty)(options "")(descr ""))
   (lib (name KiCad)(type KiCad)(uri E:/ELEC74/ESP32-C3-MINI-1-N4/KiCad.pretty)(options "")(descr ""))
   (lib (name Accel_LIS2DE12TR)(type KiCad)(uri ${KIPRJMOD}/Libraries/LIS2DE12TR/footprints.pretty)(options "")(descr Accelerometer))
+  (lib (name 74_ClassProj_IRFootprint)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_ClassProj_IRFootprint.pretty)(options "")(descr ""))
+  (lib (name LIS2DE12TR)(type KiCad)(uri ${KIPRJMOD}/Libraries/LIS2DE12TR)(options "")(descr ""))
+  (lib (name mehdi)(type KiCad)(uri ${KIPRJMOD}/Libraries/mehdi.pretty)(options "")(descr ""))
+  (lib (name SAM)(type KiCad)(uri ${KIPRJMOD}/Libraries/SAM.pretty)(options "")(descr ""))
 )
