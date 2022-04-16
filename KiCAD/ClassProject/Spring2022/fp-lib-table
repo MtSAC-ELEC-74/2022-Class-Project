@@ -9,4 +9,5 @@
   (lib (name 74_LIS2DE12TR)(type KiCad)(uri ${KIPRJMOD}/Libraries/LIS2DE12TR)(options "")(descr ""))
   (lib (name 74_mehdi)(type KiCad)(uri ${KIPRJMOD}/Libraries/mehdi.pretty)(options "")(descr ""))
   (lib (name 74_SAM)(type KiCad)(uri ${KIPRJMOD}/Libraries/SAM.pretty)(options "")(descr ""))
+  (lib (name 74_Kevin)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_Kevin/74_Kevin.pretty)(options "")(descr ""))
 )
