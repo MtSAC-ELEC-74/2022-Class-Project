@@ -1,8 +1,33 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP ESP32-C3-MINI-1-N4
-D SMD MODULE, ESP32-C3FN4, PCB ANT
-F https://www.mouser.com/datasheet/2/891/Espressif_ESP32_C3_MINI_1_Datasheet-2006822.pdf
+$CMP 74AHC595
+D 8-bit serial in/out Shift Register 3-State Outputs
+K AHCMOS SR 3State
+F https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT595.pdf
+$ENDCMP
+#
+$CMP 74AHCT595
+D 8-bit serial in/out Shift Register 3-State Outputs
+K AHCTMOS SR 3State
+F https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT595.pdf
+$ENDCMP
+#
+$CMP 74HC595
+D 8-bit serial in/out Shift Register 3-State Outputs
+K HCMOS SR 3State
+F http://www.ti.com/lit/ds/symlink/sn74hc595.pdf
+$ENDCMP
+#
+$CMP 74HCT595
+D 8-bit serial in/out Shift Register 3-State Outputs
+K HCTMOS SR 3State
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf
+$ENDCMP
+#
+$CMP 74LS595
+D 8-bit serial in/out Shift Register 3-State Outputs
+K TTL SR 3State
+F http://www.ti.com/lit/gpn/sn74ls595
 $ENDCMP
 #
 $CMP R
