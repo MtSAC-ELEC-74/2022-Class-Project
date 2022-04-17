@@ -1,22 +1,22 @@
-4950451372079
-74_Patrick B
-ESP32C3MINI1N4
-ESP32-C3-MINI-1-N4
-Integrated Circuit
+4950458557013
+74_jacob
+BatteryHolder_Keystone_2479_3xAAA
+Keystone Battery Holder, 2479, Battery Type 3xAAA (Script generated with StandardBox.py) (Keystone Battery Holder, 2479, Battery Type 3xAAA)
+Keystone Battery Holder 2479 Battery Type 3xAAA
 0
-61
-61
-74_Patrick B
-FubSocket_DIP-40_600_ELL
-
-
-0
-40
-40
-74_Patrick B
-ICM7555-PDIP
+2
+2
+74_jacob
+R-0.25W-THRU
 
 
 0
-8
-7
+2
+2
+74_jacob
+SOIC-16_4.55x10.3mm_P1.27mm
+SOIC, 16 Pin (https://toshiba.semicon-storage.com/info/docget.jsp?did=12858&prodName=TLP291-4), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+16
+16
