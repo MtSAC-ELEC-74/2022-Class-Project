@@ -71,4 +71,76 @@ Wire Wire Line
 Wire Wire Line
 	3500 3500 4000 3500
 Connection ~ 4000 3500
+$Comp
+L power:GND #PWR?
+U 1 1 62644A84
+P 7300 4450
+F 0 "#PWR?" H 7300 4200 50  0001 C CNN
+F 1 "GND" H 7305 4277 50  0000 C CNN
+F 2 "" H 7300 4450 50  0001 C CNN
+F 3 "" H 7300 4450 50  0001 C CNN
+	1    7300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3700 7300 3800
+Connection ~ 7300 3800
+Wire Wire Line
+	4650 3800 4450 3800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6264686E
+P 7900 2500
+F 0 "#PWR?" H 7900 2350 50  0001 C CNN
+F 1 "+3.3V" H 7915 2673 50  0000 C CNN
+F 2 "" H 7900 2500 50  0001 C CNN
+F 3 "" H 7900 2500 50  0001 C CNN
+	1    7900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3600 7900 3500
+Wire Wire Line
+	7900 2500 7900 3500
+Connection ~ 7900 3500
+Text HLabel 7400 2500 1    50   Output ~ 0
+INT1
+Text HLabel 7500 2500 1    50   Output ~ 0
+INT2
+Wire Wire Line
+	7050 3300 7400 3300
+Wire Wire Line
+	7050 3400 7500 3400
+Wire Wire Line
+	7500 3400 7500 2500
+Wire Wire Line
+	7400 2500 7400 3300
+Wire Wire Line
+	7050 3500 7900 3500
+Wire Wire Line
+	7050 3600 7900 3600
+Wire Wire Line
+	7300 3800 7300 4450
+$Comp
+L power:GND #PWR?
+U 1 1 6264EB29
+P 4450 4450
+F 0 "#PWR?" H 4450 4200 50  0001 C CNN
+F 1 "GND" H 4455 4277 50  0000 C CNN
+F 2 "" H 4450 4450 50  0001 C CNN
+F 3 "" H 4450 4450 50  0001 C CNN
+	1    4450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3800 4450 4450
+Wire Wire Line
+	4650 3700 4450 3700
+Wire Wire Line
+	4450 3700 4450 3800
+Connection ~ 4450 3800
+Wire Wire Line
+	7050 3700 7300 3700
+Wire Wire Line
+	7050 3800 7300 3800
 $EndSCHEMATC
