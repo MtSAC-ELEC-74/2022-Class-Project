@@ -9,4 +9,5 @@
   (lib (name 74_mehdi)(type KiCad)(uri ${KIPRJMOD}/Libraries/mehdi.pretty)(options "")(descr ""))
   (lib (name 74_SAM)(type KiCad)(uri ${KIPRJMOD}/Libraries/SAM.pretty)(options "")(descr ""))
   (lib (name 74_Kevin)(type KiCad)(uri ${KIPRJMOD}/Libraries/74_Kevin/74_Kevin.pretty)(options "")(descr ""))
+  (lib (name _pontech)(type KiCad)(uri ${KIPRJMOD}/pontech/KiCADLibrary/_pontech.pretty)(options "")(descr ""))
 )

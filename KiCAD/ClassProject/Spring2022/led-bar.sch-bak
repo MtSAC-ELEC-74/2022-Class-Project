@@ -985,8 +985,6 @@ F 3 "" H 1250 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 7600 1250 7450
-Wire Wire Line
 	2150 7300 2150 7450
 Wire Wire Line
 	2150 7450 1250 7450
@@ -1218,5 +1216,7 @@ Wire Wire Line
 Wire Wire Line
 	14350 3050 14350 3400
 Text Notes 800  800  0    50   ~ 0
-ISSUES:\n- GND NET NOT CONNECTED
+ISSUES:\n
+Wire Wire Line
+	1250 7450 1250 7650
 $EndSCHEMATC

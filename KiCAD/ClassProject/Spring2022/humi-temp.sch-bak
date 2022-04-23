@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 950  1000 0    50   ~ 0
-MISSING:\n- Bypass caps (for both parts)
 $Comp
 L 74_Jacob:+3.3V #PWR?
 U 1 1 6267B8DF
@@ -49,7 +47,7 @@ F 3 "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8800 3200 8800 3650
+	8800 3200 8800 3350
 Wire Wire Line
 	8800 3650 8100 3650
 $Comp
@@ -79,11 +77,11 @@ F 3 "" H 3450 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 4100 3450 3900
+	3450 4100 3450 4050
 Text HLabel 4500 3600 2    50   Output ~ 0
 Vtemp-Analog
 Wire Wire Line
-	3850 3600 4500 3600
+	3850 3600 4150 3600
 $Comp
 L 74_Jacob:+3.3V #PWR?
 U 1 1 6267F92C
@@ -96,7 +94,7 @@ F 3 "" H 3450 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 3200 3450 3300
+	3450 3200 3450 3250
 Text HLabel 7250 3450 0    50   BiDi ~ 0
 I2C-SDA
 Wire Wire Line
@@ -105,4 +103,92 @@ Text HLabel 8300 3450 2    50   BiDi ~ 0
 I2C-SCK
 Wire Wire Line
 	8300 3450 8100 3450
+$Comp
+L 1_pontech:PLP-000068 C?
+U 1 1 6264748D
+P 4150 3850
+F 0 "C?" H 4265 3941 50  0000 L CNN
+F 1 "PLP-000068" H 4265 3850 50  0000 L CNN
+F 2 "a_pontech:CAP-NON-POLAR-0603" H 4250 3400 50  0001 L CNN
+F 3 "~" H 4150 3850 50  0001 C CNN
+F 4 "0.1UF 25V 10% X7R 0603" H 4265 3759 50  0000 L CNN "Info"
+	1    4150 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 3600
+Wire Wire Line
+	4150 3600 4500 3600
+Wire Wire Line
+	4150 4050 3450 4050
+Connection ~ 3450 4050
+Wire Wire Line
+	3450 4050 3450 3900
+Wire Wire Line
+	4150 3700 4150 3600
+Wire Wire Line
+	4150 4000 4150 4050
+$Comp
+L 1_pontech:PLP-000068 C?
+U 1 1 626498A3
+P 1950 3750
+F 0 "C?" H 2065 3841 50  0000 L CNN
+F 1 "PLP-000068" H 2065 3750 50  0000 L CNN
+F 2 "a_pontech:CAP-NON-POLAR-0603" H 2050 3300 50  0001 L CNN
+F 3 "~" H 1950 3750 50  0001 C CNN
+F 4 "0.1UF 25V 10% X7R 0603" H 2065 3659 50  0000 L CNN "Info"
+	1    1950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3600 1950 3250
+Wire Wire Line
+	1950 3250 3450 3250
+Connection ~ 3450 3250
+Wire Wire Line
+	3450 3250 3450 3300
+$Comp
+L 74_Jacob:GND #PWR?
+U 1 1 6264A42D
+P 1950 4100
+F 0 "#PWR?" H 1950 3850 50  0001 C CNN
+F 1 "GND" H 1950 3927 50  0000 C CNN
+F 2 "" H 1950 4100 50  0001 C CNN
+F 3 "" H 1950 4100 50  0001 C CNN
+	1    1950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4100 1950 3900
+$Comp
+L 1_pontech:PLP-000068 C?
+U 1 1 6264AACE
+P 9150 3600
+F 0 "C?" H 9265 3691 50  0000 L CNN
+F 1 "PLP-000068" H 9265 3600 50  0000 L CNN
+F 2 "a_pontech:CAP-NON-POLAR-0603" H 9250 3150 50  0001 L CNN
+F 3 "~" H 9150 3600 50  0001 C CNN
+F 4 "0.1UF 25V 10% X7R 0603" H 9265 3509 50  0000 L CNN "Info"
+	1    9150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3450 9150 3350
+Wire Wire Line
+	9150 3350 8800 3350
+Connection ~ 8800 3350
+Wire Wire Line
+	8800 3350 8800 3650
+$Comp
+L 74_Jacob:GND #PWR?
+U 1 1 6264C084
+P 9150 3800
+F 0 "#PWR?" H 9150 3550 50  0001 C CNN
+F 1 "GND" H 9150 3627 50  0000 C CNN
+F 2 "" H 9150 3800 50  0001 C CNN
+F 3 "" H 9150 3800 50  0001 C CNN
+	1    9150 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3750 9150 3800
 $EndSCHEMATC

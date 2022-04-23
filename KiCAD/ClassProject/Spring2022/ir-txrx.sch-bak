@@ -32,8 +32,6 @@ Text HLabel 1900 3300 0    50   Output ~ 0
 IR-RX
 Wire Wire Line
 	1900 2000 2250 2000
-Wire Wire Line
-	2850 2450 2850 2550
 $Comp
 L 74_Jacob:GND #PWR?
 U 1 1 6265D8F2
@@ -69,4 +67,22 @@ F 3 "" H 5650 1650 50  0001 C CNN
 	1    5650 1650
 	1    0    0    -1  
 $EndComp
+$Comp
+L 1_pontech:PLP-000031 R?
+U 1 1 62644FF5
+P 2850 2250
+F 0 "R?" H 2920 2341 50  0000 L CNN
+F 1 "PLP-000031" H 2920 2250 50  0000 L CNN
+F 2 "a_pontech:R_0603_1608Metric" V 2780 2250 50  0001 C CNN
+F 3 "~" H 2850 2250 50  0001 C CNN
+F 4 "200 0.1W 1% 0603" H 2920 2159 50  0000 L CNN "Info"
+	1    2850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2400 2850 2550
+Wire Wire Line
+	2850 2100 2850 2000
+Wire Wire Line
+	2850 2000 2550 2000
 $EndSCHEMATC
