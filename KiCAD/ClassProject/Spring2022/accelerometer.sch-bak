@@ -98,27 +98,10 @@ F 3 "" H 7900 2500 50  0001 C CNN
 	1    7900 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7900 3600 7900 3500
-Wire Wire Line
-	7900 2500 7900 3500
-Connection ~ 7900 3500
-Text HLabel 7400 2500 1    50   Output ~ 0
+Text HLabel 8400 3300 2    50   Output ~ 0
 INT1
-Text HLabel 7500 2500 1    50   Output ~ 0
+Text HLabel 8400 3400 2    50   Output ~ 0
 INT2
-Wire Wire Line
-	7050 3300 7400 3300
-Wire Wire Line
-	7050 3400 7500 3400
-Wire Wire Line
-	7500 3400 7500 2500
-Wire Wire Line
-	7400 2500 7400 3300
-Wire Wire Line
-	7050 3500 7900 3500
-Wire Wire Line
-	7050 3600 7900 3600
 Wire Wire Line
 	7300 3800 7300 4450
 $Comp
@@ -143,4 +126,17 @@ Wire Wire Line
 	7050 3700 7300 3700
 Wire Wire Line
 	7050 3800 7300 3800
+Wire Wire Line
+	7050 3300 8400 3300
+Wire Wire Line
+	7050 3400 8400 3400
+Wire Wire Line
+	7050 3500 7900 3500
+Wire Wire Line
+	7900 3500 7900 2500
+Wire Wire Line
+	7100 3600 7900 3600
+Wire Wire Line
+	7900 3600 7900 3500
+Connection ~ 7900 3500
 $EndSCHEMATC
