@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP SHT40-AD1B-R3
+D Humidity and Temperature Sensor, +/-3%RH, +/-0.3degC, I2C, 1.62-1.98V, DFN-4
+K Sensirion environment environmental measurement digital
+F https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf
+$ENDCMP
+#
 $CMP SHTC1
 D Humidity and Temperature Sensor, +/-3%RH, +/-0.3degC, I2C, 1.62-1.98V, DFN-4
 K Sensirion environment environmental measurement digital

@@ -17,6 +17,11 @@ K batt voltage-source cell
 F ~
 $ENDCMP
 #
+$CMP GND
+D Power symbol creates a global label with name "GND" , ground
+K power-flag
+$ENDCMP
+#
 $CMP R
 D Resistor
 K R res resistor
