@@ -1,0 +1,3 @@
+[submodule "KiCAD/ClassProject/Spring2022/pontech/KiCADLibrary"]
+	path = KiCAD/ClassProject/Spring2022/pontech/KiCADLibrary
+	url = https://github.com/pontech/KiCadLibrary.git
