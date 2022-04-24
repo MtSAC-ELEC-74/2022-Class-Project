@@ -41,7 +41,7 @@ U 1 1 6267D217
 P 7800 3550
 F 0 "U11" V 7433 3550 50  0000 C CNN
 F 1 "SHT40-AD1B-R3" V 7524 3550 50  0000 C CNN
-F 2 "74_eduardo_aaron:SHTC1Humidity_temp_footprint" H 8000 3200 50  0001 C CNN
+F 2 "74_eduardo_aaron:SHT4X" H 8000 3200 50  0001 C CNN
 F 3 "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf" H 7500 4000 50  0001 C CNN
 	1    7800 3550
 	0    1    1    0   
