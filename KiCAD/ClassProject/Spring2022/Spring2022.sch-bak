@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -29,12 +29,12 @@ $EndSheet
 $Comp
 L 74_Patrick:FUB-MINI U1
 U 1 1 625BD726
-P 6050 2050
-F 0 "U1" H 6025 3115 50  0000 C CNN
-F 1 "FUB-MINI" H 6025 3024 50  0000 C CNN
-F 2 "74_Patrick B:FubSocket_DIP-40_600_ELL" H 5850 2050 50  0001 C CNN
-F 3 "" H 5850 2050 50  0001 C CNN
-	1    6050 2050
+P 5400 3000
+F 0 "U1" H 5375 4065 50  0000 C CNN
+F 1 "FUB-MINI" H 5375 3974 50  0000 C CNN
+F 2 "74_Patrick B:FubSocket_DIP-40_600_ELL" H 5200 3000 50  0001 C CNN
+F 3 "" H 5200 3000 50  0001 C CNN
+	1    5400 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -42,9 +42,9 @@ Wire Wire Line
 Wire Wire Line
 	7950 3750 7950 3900
 Wire Wire Line
-	6900 1200 6900 1250
+	6250 2150 6250 2200
 Wire Wire Line
-	6900 1250 6700 1250
+	6250 2200 6050 2200
 $Comp
 L 74_Jacob:GND #PWR0105
 U 1 1 625DF7B3
@@ -59,33 +59,33 @@ $EndComp
 $Comp
 L 74_Jacob:GND #PWR0106
 U 1 1 625DFDFE
-P 7200 1350
-F 0 "#PWR0106" H 7200 1100 50  0001 C CNN
-F 1 "GND" V 7200 1222 50  0000 R CNN
-F 2 "" H 7200 1350 50  0001 C CNN
-F 3 "" H 7200 1350 50  0001 C CNN
-	1    7200 1350
+P 6550 2300
+F 0 "#PWR0106" H 6550 2050 50  0001 C CNN
+F 1 "GND" V 6550 2172 50  0000 R CNN
+F 2 "" H 6550 2300 50  0001 C CNN
+F 3 "" H 6550 2300 50  0001 C CNN
+	1    6550 2300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7200 1350 6700 1350
+	6550 2300 6050 2300
 $Comp
 L 74_Jacob:GND #PWR0107
 U 1 1 625E0E59
-P 4900 1350
-F 0 "#PWR0107" H 4900 1100 50  0001 C CNN
-F 1 "GND" V 4900 1222 50  0000 R CNN
-F 2 "" H 4900 1350 50  0001 C CNN
-F 3 "" H 4900 1350 50  0001 C CNN
-	1    4900 1350
+P 4250 2300
+F 0 "#PWR0107" H 4250 2050 50  0001 C CNN
+F 1 "GND" V 4250 2172 50  0000 R CNN
+F 2 "" H 4250 2300 50  0001 C CNN
+F 3 "" H 4250 2300 50  0001 C CNN
+	1    4250 2300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4900 1350 5350 1350
-Text GLabel 7050 3050 2    50   Input ~ 0
+	4250 2300 4700 2300
+Text GLabel 6400 4000 2    50   Input ~ 0
 MOSI
 Wire Wire Line
-	7050 3050 6700 3050
+	6400 4000 6050 4000
 Text GLabel 2000 1800 2    50   Input ~ 0
 MOSI
 Wire Wire Line
@@ -94,10 +94,10 @@ Text GLabel 2000 1900 2    50   Input ~ 0
 SCK
 Wire Wire Line
 	2000 1900 1750 1900
-Text GLabel 5000 1850 0    50   Input ~ 0
+Text GLabel 4350 2800 0    50   Input ~ 0
 SCK
 Wire Wire Line
-	5000 1850 5350 1850
+	4350 2800 4700 2800
 Text GLabel 2000 2000 2    50   Input ~ 0
 DISPLAY-CLK
 Text GLabel 2000 2100 2    50   Input ~ 0
@@ -106,9 +106,9 @@ Wire Wire Line
 	2000 2100 1750 2100
 Wire Wire Line
 	1750 2000 2000 2000
-Text GLabel 7100 2750 2    50   Input ~ 0
+Text GLabel 6450 3700 2    50   Input ~ 0
 DISPLAY-CLK
-Text GLabel 7100 2650 2    50   Input ~ 0
+Text GLabel 6450 3600 2    50   Input ~ 0
 ~LED-OE
 $Comp
 L 74_Jacob:AAA-3x-Battery-Pack BT1
@@ -128,12 +128,6 @@ F0 "IR TX/RX" 50
 F1 "ir-txrx.sch" 50
 F2 "IR-TX" I R 1750 2750 50 
 F3 "IR-RX" O R 1750 2900 50 
-$EndSheet
-$Sheet
-S 8850 900  800  600 
-U 626796C5
-F0 "Bluetooth Microchip" 50
-F1 "bluetooth-microchip.sch" 50
 $EndSheet
 $Sheet
 S 1000 3450 750  600 
@@ -209,22 +203,22 @@ Wire Wire Line
 	2000 3750 1750 3750
 Wire Wire Line
 	1750 3900 2000 3900
-Text GLabel 7100 2250 2    50   Input ~ 0
+Text GLabel 6450 3200 2    50   Input ~ 0
 I2C-SDA
-Text GLabel 7100 2350 2    50   Input ~ 0
+Text GLabel 6450 3300 2    50   Input ~ 0
 I2C-SCK
 Wire Wire Line
-	7100 2350 6700 2350
+	6450 3300 6050 3300
 Wire Wire Line
-	6700 2250 7100 2250
+	6050 3200 6450 3200
 Wire Wire Line
-	5350 1450 4450 1450
+	4700 2400 3800 2400
 Wire Wire Line
-	4450 1450 4450 1350
+	3800 2400 3800 2300
 Wire Wire Line
-	7650 1400 7650 1450
+	7000 2350 7000 2400
 Wire Wire Line
-	7650 1450 6700 1450
+	7000 2400 6050 2400
 Text GLabel 2000 4400 2    50   Input ~ 0
 I2C-SCK
 Text GLabel 2000 4500 2    50   Input ~ 0
@@ -233,10 +227,10 @@ Wire Wire Line
 	2000 4400 1750 4400
 Wire Wire Line
 	1750 4500 2000 4500
-Text GLabel 7050 2950 2    50   Input ~ 0
+Text GLabel 6400 3900 2    50   Input ~ 0
 MISO
 Wire Wire Line
-	7050 2950 6700 2950
+	6400 3900 6050 3900
 Text GLabel 2000 4850 2    50   Input ~ 0
 MISO
 Text GLabel 2000 4950 2    50   Input ~ 0
@@ -262,12 +256,12 @@ DONE
 $Comp
 L 74_Jacob:+4.5V #PWR0108
 U 1 1 6274567D
-P 6900 1200
-F 0 "#PWR0108" H 6900 1050 50  0001 C CNN
-F 1 "+4.5V" H 6900 1373 50  0000 C CNN
-F 2 "" H 6900 1200 50  0001 C CNN
-F 3 "" H 6900 1200 50  0001 C CNN
-	1    6900 1200
+P 6250 2150
+F 0 "#PWR0108" H 6250 2000 50  0001 C CNN
+F 1 "+4.5V" H 6250 2323 50  0000 C CNN
+F 2 "" H 6250 2150 50  0001 C CNN
+F 3 "" H 6250 2150 50  0001 C CNN
+	1    6250 2150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -295,23 +289,23 @@ $EndComp
 $Comp
 L 74_Jacob:+3.3V #PWR0101
 U 1 1 62747748
-P 4450 1350
-F 0 "#PWR0101" H 4450 1200 50  0001 C CNN
-F 1 "+3.3V" H 4450 1523 50  0000 C CNN
-F 2 "" H 4450 1350 50  0001 C CNN
-F 3 "" H 4450 1350 50  0001 C CNN
-	1    4450 1350
+P 3800 2300
+F 0 "#PWR0101" H 3800 2150 50  0001 C CNN
+F 1 "+3.3V" H 3800 2473 50  0000 C CNN
+F 2 "" H 3800 2300 50  0001 C CNN
+F 3 "" H 3800 2300 50  0001 C CNN
+	1    3800 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74_Jacob:+3.3V #PWR0102
 U 1 1 62747E3F
-P 7650 1400
-F 0 "#PWR0102" H 7650 1250 50  0001 C CNN
-F 1 "+3.3V" H 7650 1573 50  0000 C CNN
-F 2 "" H 7650 1400 50  0001 C CNN
-F 3 "" H 7650 1400 50  0001 C CNN
-	1    7650 1400
+P 7000 2350
+F 0 "#PWR0102" H 7000 2200 50  0001 C CNN
+F 1 "+3.3V" H 7000 2523 50  0000 C CNN
+F 2 "" H 7000 2350 50  0001 C CNN
+F 3 "" H 7000 2350 50  0001 C CNN
+	1    7000 2350
 	1    0    0    -1  
 $EndComp
 Text GLabel 2000 4700 2    50   Input ~ 0
@@ -329,11 +323,11 @@ Wire Wire Line
 	2000 5250 1750 5250
 Wire Wire Line
 	1750 5400 2000 5400
-Text GLabel 4600 2150 0    50   Input ~ 0
+Text GLabel 3950 3100 0    50   Input ~ 0
 ~INT1-ACC
-Text GLabel 4600 1950 0    50   Input ~ 0
+Text GLabel 3950 2900 0    50   Input ~ 0
 ~INT2-ACC
-Text GLabel 5000 2050 0    50   Input ~ 0
+Text GLabel 4350 3000 0    50   Input ~ 0
 ~CS-ACC
 Text GLabel 2000 2750 2    50   Input ~ 0
 IR-TX
@@ -343,9 +337,9 @@ Wire Wire Line
 	1750 2750 2000 2750
 Wire Wire Line
 	2000 2900 1750 2900
-Text GLabel 7050 3150 2    50   Input ~ 0
+Text GLabel 6400 4100 2    50   Input ~ 0
 IR-TX
-Text GLabel 7100 2450 2    50   Input ~ 0
+Text GLabel 6450 3400 2    50   Input ~ 0
 IR-RX
 $Comp
 L 74_Jacob:+3.3V #PWR0103
@@ -370,241 +364,25 @@ F 3 "" H 10150 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 1950 4600 1950
+	4700 2900 3950 2900
 Wire Wire Line
-	5000 2050 5350 2050
+	4350 3000 4700 3000
 Wire Wire Line
-	5350 2150 4600 2150
+	4700 3100 3950 3100
 Text GLabel 2000 3600 2    50   Input ~ 0
 TEMPERATURE
 Wire Wire Line
 	2000 3600 1750 3600
-Text GLabel 5000 2350 0    50   Input ~ 0
+Text GLabel 4350 3300 0    50   Input ~ 0
 TEMPERATURE
 Wire Wire Line
-	5000 2350 5350 2350
+	4350 3300 4700 3300
 Wire Wire Line
-	7100 2750 6700 2750
+	6450 3700 6050 3700
 Wire Wire Line
-	7100 2650 6700 2650
+	6450 3600 6050 3600
 Wire Wire Line
-	7050 3150 6700 3150
+	6400 4100 6050 4100
 Wire Wire Line
-	7100 2450 6700 2450
-$Comp
-L 74_Patrick:ESP32-C3-MINI-1-N4 IC1
-U 1 1 62773C69
-P 4000 4000
-F 0 "IC1" H 4650 4265 50  0000 C CNN
-F 1 "ESP32-C3-MINI-1-N4" H 4650 4174 50  0000 C CNN
-F 2 "74_Patrick B:ESP32C3MINI1N4" H 5150 4100 50  0001 L CNN
-F 3 "https://www.mouser.com/datasheet/2/891/Espressif_ESP32_C3_MINI_1_Datasheet-2006822.pdf" H 5150 4000 50  0001 L CNN
-F 4 "SMD MODULE, ESP32-C3FN4, PCB ANT" H 5150 3900 50  0001 L CNN "Description"
-F 5 "2.55" H 5150 3800 50  0001 L CNN "Height"
-F 6 "Espressif Systems" H 5150 3700 50  0001 L CNN "Manufacturer_Name"
-F 7 "ESP32-C3-MINI-1-N4" H 5150 3600 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "356-ESP32-C3-MINI1N4" H 5150 3500 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-C3-MINI-1-N4?qs=stqOd1AaK7%252B%2FpH3qqyGehA%3D%3D" H 5150 3400 50  0001 L CNN "Mouser Price/Stock"
-	1    4000 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4400 5450 4400
-Wire Wire Line
-	5450 4400 5450 4500
-Wire Wire Line
-	5450 6900 5300 6900
-$Comp
-L 74_Jacob:GND #PWR?
-U 1 1 62778CA7
-P 5450 7050
-F 0 "#PWR?" H 5450 6800 50  0001 C CNN
-F 1 "GND" H 5450 6877 50  0000 C CNN
-F 2 "" H 5450 7050 50  0001 C CNN
-F 3 "" H 5450 7050 50  0001 C CNN
-	1    5450 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 7050 5450 6900
-Connection ~ 5450 6900
-Wire Wire Line
-	5300 6800 5450 6800
-Connection ~ 5450 6800
-Wire Wire Line
-	5450 6800 5450 6900
-Wire Wire Line
-	5450 6700 5300 6700
-Connection ~ 5450 6700
-Wire Wire Line
-	5450 6700 5450 6800
-Wire Wire Line
-	5300 6600 5450 6600
-Connection ~ 5450 6600
-Wire Wire Line
-	5450 6600 5450 6700
-Wire Wire Line
-	5450 6500 5300 6500
-Connection ~ 5450 6500
-Wire Wire Line
-	5450 6500 5450 6600
-Wire Wire Line
-	5300 6400 5450 6400
-Connection ~ 5450 6400
-Wire Wire Line
-	5450 6400 5450 6500
-Wire Wire Line
-	5450 6300 5300 6300
-Connection ~ 5450 6300
-Wire Wire Line
-	5450 6300 5450 6400
-Wire Wire Line
-	5300 6200 5450 6200
-Connection ~ 5450 6200
-Wire Wire Line
-	5450 6200 5450 6300
-Wire Wire Line
-	5450 6100 5300 6100
-Connection ~ 5450 6100
-Wire Wire Line
-	5450 6100 5450 6200
-Wire Wire Line
-	5300 6000 5450 6000
-Connection ~ 5450 6000
-Wire Wire Line
-	5450 6000 5450 6100
-Wire Wire Line
-	5450 5900 5300 5900
-Connection ~ 5450 5900
-Wire Wire Line
-	5450 5900 5450 6000
-Wire Wire Line
-	5300 5800 5450 5800
-Connection ~ 5450 5800
-Wire Wire Line
-	5450 5800 5450 5900
-Wire Wire Line
-	5450 5700 5300 5700
-Connection ~ 5450 5700
-Wire Wire Line
-	5450 5700 5450 5800
-Wire Wire Line
-	5300 5600 5450 5600
-Connection ~ 5450 5600
-Wire Wire Line
-	5450 5600 5450 5700
-Wire Wire Line
-	5450 5500 5300 5500
-Connection ~ 5450 5500
-Wire Wire Line
-	5450 5500 5450 5600
-Wire Wire Line
-	5300 5400 5450 5400
-Connection ~ 5450 5400
-Wire Wire Line
-	5450 5400 5450 5500
-Wire Wire Line
-	5450 5300 5300 5300
-Connection ~ 5450 5300
-Wire Wire Line
-	5450 5300 5450 5400
-Wire Wire Line
-	5300 5200 5450 5200
-Connection ~ 5450 5200
-Wire Wire Line
-	5450 5200 5450 5300
-Wire Wire Line
-	5450 5100 5300 5100
-Connection ~ 5450 5100
-Wire Wire Line
-	5450 5100 5450 5200
-Wire Wire Line
-	5300 5000 5450 5000
-Connection ~ 5450 5000
-Wire Wire Line
-	5450 5000 5450 5100
-Wire Wire Line
-	5300 4900 5450 4900
-Connection ~ 5450 4900
-Wire Wire Line
-	5450 4900 5450 5000
-Wire Wire Line
-	5450 4800 5300 4800
-Connection ~ 5450 4800
-Wire Wire Line
-	5450 4800 5450 4900
-Wire Wire Line
-	5300 4700 5450 4700
-Connection ~ 5450 4700
-Wire Wire Line
-	5450 4700 5450 4800
-Wire Wire Line
-	5450 4600 5300 4600
-Connection ~ 5450 4600
-Wire Wire Line
-	5450 4600 5450 4700
-Wire Wire Line
-	5300 4500 5450 4500
-Connection ~ 5450 4500
-Wire Wire Line
-	5450 4500 5450 4600
-Wire Wire Line
-	4000 4100 3800 4100
-Wire Wire Line
-	3800 4100 3800 4000
-Wire Wire Line
-	3800 4000 4000 4000
-$Comp
-L 74_Jacob:GND #PWR?
-U 1 1 627AED84
-P 3650 4000
-F 0 "#PWR?" H 3650 3750 50  0001 C CNN
-F 1 "GND" H 3650 3827 50  0000 C CNN
-F 2 "" H 3650 4000 50  0001 C CNN
-F 3 "" H 3650 4000 50  0001 C CNN
-	1    3650 4000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 4000 3800 4000
-Connection ~ 3800 4000
-$Comp
-L 74_Jacob:+3.3V #PWR?
-U 1 1 627B2F21
-P 3650 4200
-F 0 "#PWR?" H 3650 4050 50  0001 C CNN
-F 1 "+3.3V" H 3650 4373 50  0000 C CNN
-F 2 "" H 3650 4200 50  0001 C CNN
-F 3 "" H 3650 4200 50  0001 C CNN
-	1    3650 4200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3650 4200 4000 4200
-$Comp
-L 74_Jacob:GND #PWR?
-U 1 1 627B8310
-P 3650 5000
-F 0 "#PWR?" H 3650 4750 50  0001 C CNN
-F 1 "GND" H 3650 4827 50  0000 C CNN
-F 2 "" H 3650 5000 50  0001 C CNN
-F 3 "" H 3650 5000 50  0001 C CNN
-	1    3650 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L 74_Jacob:GND #PWR?
-U 1 1 627B8A2D
-P 3650 5300
-F 0 "#PWR?" H 3650 5050 50  0001 C CNN
-F 1 "GND" H 3650 5127 50  0000 C CNN
-F 2 "" H 3650 5300 50  0001 C CNN
-F 3 "" H 3650 5300 50  0001 C CNN
-	1    3650 5300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 5300 4000 5300
-Wire Wire Line
-	4000 5000 3650 5000
+	6450 3400 6050 3400
 $EndSCHEMATC
