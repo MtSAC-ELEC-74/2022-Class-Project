@@ -28,6 +28,8 @@ SPARKFUN_LIS2DH12 accel;       //Create instance
 void setup()
 {
   Serial.begin(115200);
+  while(!Serial);
+  delay(1000);
   Serial.println("SparkFun Accel Example");
 
   Wire.begin();
@@ -38,6 +40,8 @@ void setup()
     while (1)
       ;
   }
+  Serial.println("Ax, Ay, Az, Px, Py, Pz, Temp C");
+
 }
 
 void loop()
@@ -45,20 +49,51 @@ void loop()
   //Print accel values only if new data is available
   if (accel.available())
   {
-    float accelX = accel.getX();
-    float accelY = accel.getY();
-    float accelZ = accel.getZ();
+    static float Ax_last;
+    static float Ay_last;
+    static float Az_last;
+    static float Vx_last;
+    static float Vy_last;
+    static float Vz_last;
+    float Ax = accel.getX();
+    float Ay = accel.getY();
+    float Az = accel.getZ();
+    
+    static float Vx = 0, Vy = 0, Vz = 0;
+    static float Px = 0, Py = 0, Pz = 0;
+    
+    Vx += Ax;
+    Vy += Ay;
+    Vz += Az;
+    Px += Vx;
+    Py += Vy;
+    Pz += Vz;
+    
     float tempC = accel.getTemperature();
 
-    Serial.print("Acc [mg]: ");
-    Serial.print(accelX, 1);
-    Serial.print(" x, ");
-    Serial.print(accelY, 1);
-    Serial.print(" y, ");
-    Serial.print(accelZ, 1);
-    Serial.print(" z, ");
+//    Serial.print("Acc [mg]: ");
+    Serial.print(Ax, 1);
+    Serial.print(", ");
+    Serial.print(Ay, 1);
+    Serial.print(", ");
+    Serial.print(Az, 1);
+    Serial.print(", ");
+
+//    Serial.print(Vx, 1);
+//    Serial.print(", ");
+//    Serial.print(Vy, 1);
+//    Serial.print(", ");
+//    Serial.print(Vz, 1);
+//    Serial.print(", ");
+//
+//    Serial.print(Px, 1);
+//    Serial.print(", ");
+//    Serial.print(Py, 1);
+//    Serial.print(", ");
+//    Serial.print(Pz, 1);
+//    Serial.print(", ");
+
     Serial.print(tempC, 1);
-    Serial.print("C");
     Serial.println();
 
     //    int rawX = accel.getRawX();
@@ -73,5 +108,13 @@ void loop()
     //    Serial.print(rawZ);
     //    Serial.print(" z");
     //    Serial.println();
+
+    Ax_last = Ax;
+    Ay_last = Ay;
+    Az_last = Az;
+    Vx_last = Vx;
+    Vy_last = Vy;
+    Vz_last = Vz;
+    
   }
 }
