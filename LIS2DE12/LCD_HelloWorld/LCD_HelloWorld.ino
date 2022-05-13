@@ -44,14 +44,24 @@ void setup() {
   // set up the LCD's number of columns and rows: 
   lcd.begin(16, 2);
   // Print a message to the LCD.
-  lcd.print("hello, world!");
+  lcd.print("-Mt.SAC ELEC 74-");
 }
 
 void loop() {
+  static uint8_t x = 0;
+  uint8_t y = 0;
+  
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 1);
   // print the number of seconds since reset:
-  lcd.print(millis()/1000);
-  delay(250);
+  lcd.print(x, DEC);
+  lcd.print(" ");
+  lcd.print(y, DEC);
+  lcd.print(" ");
+  lcd.print(millis()/100);
+  lcd.print("  ");
+  delay(100);
+  x++; // ++x; x = x + 1; x += 1;
+  y++;
 }
