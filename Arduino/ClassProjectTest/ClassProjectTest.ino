@@ -14,9 +14,10 @@ char command[0x20];
 LED_Display led(21, 22);
 SPARKFUN_LIS2DH12 accel;       //Create instance
 
+const uint8_t PGM_BUTTON = 16;
+
 void setup()
 {
-  led.led_out( 0x000000000001 ); // Turn on one blue LED
   Serial.begin(115200);
   //  while (!Serial);
   //  delay(2000);
@@ -35,10 +36,14 @@ void setup()
     Serial.println("Accelerometer detected.");
     led.bar_green();
   }
-  delay(1000);
-//  strcpy(command, "led.display");
-//  led.led_control(command);
+  delay(1000);  // Delay to display status message
+
+  //  strcpy(command, "led.display");
+  //  led.led_control(command);
+  accel_level();
   accel_display();
+
+  pinMode(PGM_BUTTON, INPUT);
 }
 
 void loop()
@@ -77,24 +82,86 @@ void loop()
   }
 }
 
+void accel_level(void)
+{
+  float Ax, Ax_min = -1, Ax_max = 1;
+  float Ay, Ay_min = -1, Ay_max = 1;
+  float Az, Az_min = -1, Az_max = 1;
+
+  int32_t led_value = 0;
+  while (Serial.available() == 0 && digitalRead(PGM_BUTTON) != LOW)
+  {
+    if (accel.available())
+    {
+      Ax = accel.getX();
+      Ay = accel.getY();
+      Az = accel.getZ();
+      if (Ax > Ax_max) Ax_max = Ax;
+      if (Ax < Ax_min) Ax_min = Ax;
+      if (Ay > Ay_max) Ay_max = Ay;
+      if (Ay < Ay_min) Ay_min = Ay;
+      if (Az > Az_max) Az_max = Az;
+      if (Az < Az_min) Az_min = Az;
+    }
+    uint8_t pos_x = (uint8_t)map(Ax, Ax_min, Ax_max, 15, 0);
+    uint8_t pos_y = (uint8_t)map(Ay, Ay_min, Ay_max, 15, 0);
+    uint8_t pos_z = (uint8_t)map(Az, Az_min, Az_max, 15, 0);
+    uint64_t color = 0x0000;
+    color |= led.dot_color( LED_R, pos_x );
+    color |= led.dot_color( LED_G, pos_y );
+    color |= led.dot_color( LED_B, pos_z );
+    led.led_out( color );
+
+//    led.dot_red(pos_x);
+//    led.dot_blue(pos_y);
+//    led.dot_green(pos_z);
+
+    color |= (MASK_LED+1);
+    
+    while (color) {
+      if (color & 1)
+        Serial.printf("1");
+      else
+        Serial.printf("0");
+      color >>= 1;
+    }
+
+    Serial.printf(", ");
+    Serial.printf("%d, ", pos_x);
+    Serial.printf("%d, ", pos_y);
+    Serial.printf("%d, ", pos_z);
+    //    Serial.printf("%.1f, %d, ", Ax, pos_x);
+    //    Serial.printf("%.1f, %d, ", Ay, pos_y);
+    //    Serial.printf("%.1f, %d, ", Az, pos_z);
+
+    Serial.println();
+
+    delay(100);
+  }
+
+  while (digitalRead(PGM_BUTTON) == LOW);
+  delay(100);
+}
+
+
 void accel_display(void)
 {
   float Ax;
 
   int32_t led_value = 0;
-  while (Serial.available() == 0)
+  while (Serial.available() == 0 && digitalRead(PGM_BUTTON) != LOW)
   {
     if (accel.available())
     {
       Ax = accel.getX();
     }
 
-    if( Ax < 0 )
+    if ( Ax < 0 )
       led_value = (led_value + 1) % (sizeof(led_map) / 8);
     else
     {
       led_value = (led_value - 1);
-      if(led_value < 0) led_value = (sizeof(led_map) / 8) - 1;
+      if (led_value < 0) led_value = (sizeof(led_map) / 8) - 1;
     }
     led.led_out( led_map[led_value] );
     delayMicroseconds(1000);
