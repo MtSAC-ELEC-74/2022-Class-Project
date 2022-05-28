@@ -73,7 +73,7 @@ class LED_Display
     {
       char s[100];
       //sprintf(s, "%PRIx64", value);
-      Serial.println(s);
+      //Serial.println(s);
       digitalWrite(led_cs, LOW);
       delayMicroseconds(10);
       SPI.transfer((uint8_t)( (value >>  40) & 0xff ));
