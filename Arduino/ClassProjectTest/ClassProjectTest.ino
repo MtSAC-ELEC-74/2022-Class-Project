@@ -1,9 +1,3 @@
-#include <SPI.h>
-#include "led_display.h"
-
-LED_Display led(21, 22);
-char command[0x20];
-
 /*
   Reading and controlling the very low power LIS2DH12
   Author: Nathan Seidle
@@ -25,18 +19,23 @@ char command[0x20];
   If you don't have a platform with a Qwiic connection use the SparkFun Qwiic Breadboard Jumper (https://www.sparkfun.com/products/14425)
   Open the serial monitor at 115200 baud to see the output
 */
-
+#include <SPI.h>
+#include "led_display.h"
 #include <Wire.h>
+
+LED_Display led(21, 22);
+char command[0x20];
 
 #include "SparkFun_LIS2DH12.h" //Click here to get the library: http://librarymanager/All#SparkFun_LIS2DH12
 SPARKFUN_LIS2DH12 accel;       //Create instance
 
 void setup()
 {
+  led.led_out( 0x000000000001 ); // Turn on one blue LED
   Serial.begin(115200);
-  while (!Serial);
-  delay(2000);
-  Serial.println("SparkFun Accel Example");
+//  while (!Serial);
+//  delay(2000);
+  Serial.println("MtSAC ELEC 74 Spring 2022 Class Project");
 
   Wire.begin();
 
@@ -46,8 +45,12 @@ void setup()
     //while (1)
       ;
   }
-  Serial.println("Ax, Ay, Az, Px, Py, Pz, Temp C");
-
+  else
+  {
+    Serial.println("Accelerometer detected.");
+  }
+  strcpy(command, "led.display");
+  led.led_control(command);
 }
 
 void loop()
@@ -84,6 +87,7 @@ void loop()
 
 void accel_test(void)
 {
+  Serial.println("Ax, Ay, Az, Px, Py, Pz, Temp C");
   while (Serial.available() == 0)
   {
     //Print accel values only if new data is available
