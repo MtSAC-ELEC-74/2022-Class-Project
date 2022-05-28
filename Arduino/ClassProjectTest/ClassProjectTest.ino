@@ -87,7 +87,7 @@ void accel_display(void)
       Ax = accel.getX();
     }
 
-    if( Ax > 0 )
+    if( Ax < 0 )
       led_value = (led_value + 1) % (sizeof(led_map) / 8);
     else
     {
