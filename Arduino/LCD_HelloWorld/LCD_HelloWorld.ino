@@ -50,6 +50,7 @@ void setup() {
 void loop() {
   static uint8_t x = 0;
   uint8_t y = 0;
+  uint64_t z = 0b1111111111111111111111111111111111111111111111111111111111111111;
   
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
@@ -59,7 +60,7 @@ void loop() {
   lcd.print(" ");
   lcd.print(y, DEC);
   lcd.print(" ");
-  lcd.print(millis()/100);
+  lcd.print(millis()/1000);
   lcd.print("  ");
   delay(100);
   x++; // ++x; x = x + 1; x += 1;
