@@ -27,13 +27,15 @@ void setup()
   if (accel.begin() == false)
   {
     Serial.println("Accelerometer not detected. Check address jumper and wiring. Freezing...");
-    //while (1)
-    ;
+    led.bar_red();
+    //while (1);
   }
   else
   {
     Serial.println("Accelerometer detected.");
+    led.bar_green();
   }
+  delay(1000);
 //  strcpy(command, "led.display");
 //  led.led_control(command);
   accel_display();
