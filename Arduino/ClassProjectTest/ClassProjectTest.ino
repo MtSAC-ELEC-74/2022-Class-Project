@@ -18,6 +18,7 @@ const uint8_t PGM_BUTTON = 16;
 
 void setup()
 {
+  pinMode(PGM_BUTTON, INPUT);
   Serial.begin(115200);
   //  while (!Serial);
   //  delay(2000);
@@ -42,8 +43,6 @@ void setup()
   //  led.led_control(command);
   accel_level();
   accel_display();
-
-  pinMode(PGM_BUTTON, INPUT);
 }
 
 void loop()
@@ -123,7 +122,7 @@ void accel_level(void)
         Serial.printf("1");
       else
         Serial.printf("0");
-      color >>= 1;
+      color >>= 1; // equilivant: color = color >> 1;
     }
 
     Serial.printf(", ");
@@ -157,7 +156,7 @@ void accel_display(void)
     }
 
     if ( Ax < 0 )
-      led_value = (led_value + 1) % (sizeof(led_map) / 8);
+      led_value = (led_value + 1) % (sizeof(led_map) / 8); // Divide by 8 to get the number of elements becuase our map used uint64_t (which is 8 bytes long)
     else
     {
       led_value = (led_value - 1);
